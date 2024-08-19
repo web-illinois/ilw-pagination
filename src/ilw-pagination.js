@@ -1,8 +1,8 @@
 import { LitElement, html } from 'lit';
-import styles from './<%= name %>.styles';
-import './<%= name %>.css';
+import styles from './ilw-pagination.styles';
+import './ilw-pagination.css';
 
-class <%= _.upperFirst(_.camelCase(name.slice(4))) %> extends LitElement {
+class Pagination extends LitElement {
 
     static get properties() {
         return {
@@ -28,4 +28,4 @@ class <%= _.upperFirst(_.camelCase(name.slice(4))) %> extends LitElement {
     }
 }
 
-customElements.define('<%= name %>', <%= _.upperFirst(_.camelCase(name.slice(4))) %>);
+customElements.define('ilw-pagination', Pagination);

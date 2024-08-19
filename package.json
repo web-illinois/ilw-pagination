@@ -1,14 +1,14 @@
 {
-    "name": "@illinois-toolkit/<%= name %>",
+    "name": "@illinois-toolkit/ilw-pagination",
     "description": "One paragraph description of the component.",
-    "repository": "github:<%= repository %>",
+    "repository": "github:web-illinois/ilw-pagination",
     "private": false,
     "license": "MIT",
     "version": "0.0.1",
     "type": "module",
     "exports": {
         ".": {
-            "import": "./src/<%= name %>.js"
+            "import": "./src/ilw-pagination.js"
         }
     },
     "scripts": {
