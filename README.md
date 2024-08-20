@@ -16,7 +16,8 @@ The `ilw-pagination` component has the following attributes:
 * `label`: the label used for this page. Defaults to *Page List*. 
 * `pages`: integer only, the total number of pages in the list. This is required. 
 * `page`: integer only, the current page. Defaults to *1*.
-* `parameter`: the querystring parameter used to build the link, defaults to *page*. 
+* `parameter`: the querystring parameter used to build the link, defaults to *page*.
+* `zerostart`: Boolean value, determine if the page counting starts at 0 (this is a Drupal default). Defaults to false. 
 
 ## Code Examples
 
