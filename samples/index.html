@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
     <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
     <script type="module" src="/src/ilw-pagination.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const params = new URLSearchParams(window.location.search);
+            document.querySelectorAll("ilw-pagination").forEach(component => {
+                if (params.has('page')) {
+                    component.setAttribute('page', params.get('page'));
+                }
+                if (params.has('pages')) {
+                    component.setAttribute('pages', params.get('pages'));
+                }
+                if (params.has('parameter')) {
+                    component.setAttribute('parameter', params.get('parameter'));
+                }
+                if (params.has('label')) {
+                    component.setAttribute('label', params.get('label'));
+                }
+                if (params.has('zerostart')) {
+                    component.setAttribute('zerostart', true);
+                }
+            });
+        });
+      </script>
+
 </head>
 
 <body style="margin: 0; padding: 0;">

@@ -4,7 +4,7 @@
     "github": "https://github.com/web-illinois/ilw-pagination/",
     "type": "web component",
     "element-name": "ilw-pagination",
-    "description": "Description for builder.",
+    "description": "This component provides standardized styles for page counting links (First, Previous, a numbered set of pages with the current page highlighted, Next, and Last)",
     "version": "1.0.0-alpha",
     "date": "08/19/2024",
     "css": "https://dev.toolkit.illinois.edu/ilw-pagination/1.0.0-alpha/ilw-pagination.css",
@@ -15,22 +15,54 @@
     "samples": [
         {
             "name": "default",
-            "description": "Default information",
-            "text": "<p>Lorem ipsum</p>"
+            "description": "Default information (blank)",
+            "text": ""
         }
     ],
     "attributes-fixed": [],
-    "attributes-text": [],
+    "attributes-text": [
+        {
+            "name": "label",
+            "description": "the label used for this page counter. Defaults to *Page List*.",
+            "depreciated": false,
+            "value": ""
+        },
+        {
+            "name": "pages",
+            "description": "Number only, the number of pages in the list",
+            "depreciated": false,
+            "value": "15"
+        },
+        {
+            "name": "page",
+            "description": "Number only, the current page. If left blank, defaults to 1",
+            "depreciated": false,
+            "value": "1" 
+        },
+        {
+            "name": "parameter",
+            "description": "the querystring parameter used to build the link, defaults to 'page'. Note that if you change this, it will also change the 'page' parameter appropriately",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
     "attributes": [
         {
-            "name": "theme",
-            "description": "Color theme used",
+            "name": "hidepagecount",
+            "description": "Boolean value to hide the *page x of y* value",
             "depreciated": false,
             "values": [
                 "",
-                "blue",
-                "orange",
-                "white"
+                "true"
+            ]
+        },
+        {
+            "name": "zerostart",
+            "description": "Boolean value to determine if the page counting starts at 0 (this is a Drupal default)",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
             ]
         }
     ],

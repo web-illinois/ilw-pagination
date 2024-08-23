@@ -4,7 +4,7 @@
     "github": "https://github.com/web-illinois/ilw-pagination/",
     "type": "web component",
     "element-name": "ilw-pagination",
-    "description": "Description for builder.",
+    "description": "This component provides standardized styles for page counting links (First, Previous, a numbered set of pages with the current page highlighted, Next, and Last)",
     "toolkit-version": "",
     "production-version": "",
     "development-version": "1.0.0-alpha"
