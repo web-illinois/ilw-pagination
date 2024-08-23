@@ -1,20 +1,28 @@
 {
     "name": "@illinois-toolkit/ilw-pagination",
-    "description": "One paragraph description of the component.",
+    "description": "Illinois Toolkit: This is a navigation component for paged content.",
     "repository": "github:web-illinois/ilw-pagination",
     "private": false,
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "1.0.0-alpha",
     "type": "module",
+    "files": [
+      "src/**",
+      "dist/**",
+      "builder/**"
+    ],
     "exports": {
         ".": {
-            "import": "./src/ilw-pagination.js"
+            "import": "./src/ilw-pagination.js",
+            "require": "./src/ilw-pagination.cjs",
+            "default": "./src/ilw-pagination.js"
         }
     },
     "scripts": {
         "dev": "vite",
         "build": "vite build --config vite.build.config.js --emptyOutDir",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "prepack": "npm run build"
     },
     "dependencies": {
         "lit": "3.1.3"
