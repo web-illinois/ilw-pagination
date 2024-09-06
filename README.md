@@ -8,6 +8,8 @@ Links: **[ilw-pagination in Builder](https://builder3.toolkit.illinois.edu/compo
 
 This is a navigation component for paged content. This contains First, Previous, a numbered set of pages with the current page highlighted, Next, and Last. 
 
+There are no alternate themes to this. 
+
 If there are more than 8 pages, it will automatically fill in an ellipsis to mark a gap in pages. 
 
 Each item (First, Previous, Next, Last, and numbered pages) will link to the current page with a *page* parameter. You can change this parameter by using the `parameter` attribute. A page *https://illinois.edu/list/* with a pagination web component creates links like *https://illinois.edu/list?page=2*, *https://illinois.edu/list?page=3*, *https://illinois.edu/list?page=4*, etc. This component will respect other querystring items and not add a dbout *?* in the querystring. 

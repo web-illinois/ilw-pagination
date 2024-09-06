@@ -1,6 +1,5 @@
 import { LitElement, html } from 'lit';
 import styles from './ilw-pagination.styles';
-import './ilw-pagination.css';
 
 class Pagination extends LitElement {
 

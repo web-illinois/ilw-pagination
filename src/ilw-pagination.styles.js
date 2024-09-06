@@ -41,8 +41,14 @@ a {
   text-decoration: none;
   color: var(--il-blue);
 }
-a:hover, a:focus {
-  background-color: #ececed;
+a:hover {
+  background-color: var(--il-storm-lighter-3);
+  text-decoration: underline;
+}
+a:focus {
+  background-color: var(--ilw-link--focus-background-color);
+  color: var(--ilw-link--focus-color);
+  outline: var(--ilw-link--focus-outline);
   text-decoration: underline;
 }
 `;
