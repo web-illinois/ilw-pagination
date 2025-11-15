@@ -8,5 +8,5 @@
     "purpose": "Provide easy navigation for paged content.",
     "toolkit-version": "1.0",
     "production-version": "1.0",
-    "development-version": "1.0-beta"
+    "development-version": "latest"
 }

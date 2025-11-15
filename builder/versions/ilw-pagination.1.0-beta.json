@@ -5,11 +5,11 @@
     "type": "web component",
     "element-name": "ilw-pagination",
     "description": "This component provides standardized styles for page counting links (First, Previous, a numbered set of pages with the current page highlighted, Next, and Last)",
-    "builder-version": "1.0-beta",
-    "version": "1.0.0-beta",
-    "date": "09/13/2024",
-    "css": "https://dev.toolkit.illinois.edu/ilw-pagination/1.0.0-beta/ilw-pagination.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-pagination/1.0.0-beta/ilw-pagination.js",
+    "builder-version": "latest",
+    "version": "1.2.0-beta",
+    "date": "11/14/2025",
+    "css": "https://dev.toolkit.illinois.edu/ilw-pagination/latest/ilw-pagination.css",
+    "js": "https://dev.toolkit.illinois.edu/ilw-pagination/latest/ilw-pagination.js",
     "production": false,
     "notes": "",
     "parent-style": "",
@@ -20,7 +20,7 @@
             "text": ""
         }
     ],
-    "attributes-fixed": [],
+    "attributes-fixed": [ ],
     "attributes-text": [
         {
             "name": "label",
@@ -45,9 +45,39 @@
             "description": "the querystring parameter used to build the link, defaults to 'page'. Note that if you change this, it will also change the 'page' parameter appropriately",
             "depreciated": false,
             "value": ""
+        },
+        {
+            "name": "padding",
+            "description": "Padding of the text inside the component",
+            "depreciated": false,
+            "value": ""
         }
     ],
     "attributes": [
+       {
+            "name": "theme",
+            "description": "Color theme used",
+            "depreciated": false,
+            "values": [
+                "",
+                "blue",
+                "orange",
+                "blue-gradient",
+                "orange-gradient",
+                "gray"
+            ]
+        },
+        {
+            "name": "width",
+            "description": "Width of component",
+            "depreciated": false,
+            "values": [
+                "",
+                "full",
+                "auto",
+                "page"
+            ]
+        },
         {
             "name": "hidepagecount",
             "description": "Boolean value to hide the *page x of y* value",
