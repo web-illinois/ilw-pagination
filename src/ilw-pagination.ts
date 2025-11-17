@@ -1,22 +1,42 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, unsafeCSS } from 'lit';
 import styles from './ilw-pagination.styles';
 
-class Pagination extends LitElement {
-
-    static get properties() {
-        return {
-            page: { type: Number, attribute: true, default: 1 },
-            pages: { type: Number, attribute: true, default: 1 },
-            parameter: { type: String, attribute: true, default: 'page' },
-            label: { type: String, attribute: true, default: 'Page List' },
-            hidepagecount: { type: Boolean, attribute: true, default: false },
-            zerostart: { type: Boolean, attribute: true, default: false }
-        };
-    }
-
+import { customElement, property, query, state } from "lit/decorators.js";
+@customElement('ilw-pagination')
+export default class Pagination extends LitElement {
     static get styles() {
-        return styles;
+        return unsafeCSS(styles);
     }
+    
+    @property({type: Number}) 
+    page = 1;
+
+    @property({type: Number}) 
+    pages = 1;
+
+    @property({type: String}) 
+    parameter = "page";
+
+    @property({type: String}) 
+    label = "Page List";
+
+    @property({type: Boolean}) 
+    hidepagecount = false;
+
+    @property({type: Boolean}) 
+    zerostart = false;
+
+    @property({type: String}) 
+    url = "";
+
+    @property({type: String}) 
+    width: string = "";
+
+    @property({type: String}) 
+    padding: string = "";
+
+    @property({type: Number}) 
+    offset = 0;
 
     constructor() {
         super();
@@ -26,16 +46,29 @@ class Pagination extends LitElement {
         this.label = 'Page List';
         this.zerostart = false;
         this.hidepagecount = false;
+        this.width = '';
+        this.padding = '';
         this.url = location.href;
         this.offset = 0;
     }
 
-    getPageUrl(pageNumber) {
+    get paddingStyle() {
+      return this.padding == '' ? '' : 'padding: ' + this.padding + ';';
+    }
+
+    get outerWidth() {
+      return this.width == 'full' || this.width == 'auto' ? 'fixed' : this.width == 'page' ? 'page' : '';
+    }
+
+    get innerWidth() {
+      return this.width == 'auto' ? 'fixed' : '';
+    }
+    getPageUrl(pageNumber: Number) {
         const baseUrl = new URL(this.url);
         if (this.parameter !== 'page') {
-            baseUrl.searchParams.set('page', pageNumber);
+            baseUrl.searchParams.set('page', pageNumber.toString());
         }
-        baseUrl.searchParams.set(this.parameter, pageNumber);
+        baseUrl.searchParams.set(this.parameter, pageNumber.toString());
         return baseUrl.href;
     }
 
@@ -95,8 +128,8 @@ class Pagination extends LitElement {
         }
 
         return html`
-        <nav aria-label="${this.label}">
-            <ul>
+        <nav aria-label="${this.label}" class="${this.outerWidth}" style="${this.paddingStyle}">
+            <ul class="${this.innerWidth}">
                 ${lines}
             </ul>
         </nav>
@@ -104,4 +137,8 @@ class Pagination extends LitElement {
     }
 }
 
-customElements.define('ilw-pagination', Pagination);
+declare global {
+interface HTMLElementTagNameMap {
+    "ilw-pagination": Pagination;
+  }
+}
