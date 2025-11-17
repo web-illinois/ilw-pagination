@@ -8,8 +8,8 @@ export default defineConfig({
         outDir: "../dist",
         lib: {
             name: "ilw-pagination",
-            entry: "ilw-filter.ts",
-            fileName: "ilw-filter",
+            entry: "ilw-pagination.ts",
+            fileName: "ilw-pagination",
             formats: ["es"],
         },
         rollupOptions: {
