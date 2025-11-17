@@ -9,6 +9,6 @@ const content = html`
 
 test("renders slotted content", async () => {
     const screen = render(content);
-    const element = screen.getByText("1");
+    const element = screen.getByText("Page 1 of");
     await expect.element(element).toBeInTheDocument();
 });
