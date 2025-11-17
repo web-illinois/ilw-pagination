@@ -1,0 +1,104 @@
+{
+    "title": "Pagination",
+    "tag": "ilw-pagination",
+    "github": "https://github.com/web-illinois/ilw-pagination/",
+    "type": "web component",
+    "element-name": "ilw-pagination",
+    "description": "This component provides standardized styles for page counting links (First, Previous, a numbered set of pages with the current page highlighted, Next, and Last)",
+    "builder-version": "1.1",
+    "version": "1.1.0",
+    "date": "11/14/2025",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-pagination/1.1/ilw-pagination.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-pagination/1.1/ilw-pagination.js",
+    "production": true,
+    "notes": "",
+    "parent-style": "",
+    "samples": [
+        {
+            "name": "default",
+            "description": "Default information (blank)",
+            "text": ""
+        }
+    ],
+    "attributes-fixed": [ ],
+    "attributes-text": [
+        {
+            "name": "label",
+            "description": "the label used for this page counter. Defaults to *Page List*.",
+            "depreciated": false,
+            "value": ""
+        },
+        {
+            "name": "pages",
+            "description": "Number only, the number of pages in the list",
+            "depreciated": false,
+            "value": "15"
+        },
+        {
+            "name": "page",
+            "description": "Number only, the current page. If left blank, defaults to 1",
+            "depreciated": false,
+            "value": "1" 
+        },
+        {
+            "name": "parameter",
+            "description": "the querystring parameter used to build the link, defaults to 'page'. Note that if you change this, it will also change the 'page' parameter appropriately",
+            "depreciated": false,
+            "value": ""
+        },
+        {
+            "name": "padding",
+            "description": "Padding of the text inside the component",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [
+       {
+            "name": "theme",
+            "description": "Color theme used",
+            "depreciated": false,
+            "values": [
+                "",
+                "blue",
+                "orange",
+                "blue-gradient",
+                "orange-gradient",
+                "gray"
+            ]
+        },
+        {
+            "name": "width",
+            "description": "Width of component",
+            "depreciated": false,
+            "values": [
+                "",
+                "full",
+                "auto",
+                "page"
+            ]
+        },
+        {
+            "name": "hidepagecount",
+            "description": "Boolean value to hide the *page x of y* value",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
+            ]
+        },
+        {
+            "name": "zerostart",
+            "description": "Boolean value to determine if the page counting starts at 0 (this is a Drupal default)",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": [
+    ]
+}
