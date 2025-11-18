@@ -4,7 +4,7 @@
     "repository": "github:web-illinois/ilw-pagination",
     "private": false,
     "license": "MIT",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "type": "module",
     "files": [
       "src/**",
@@ -16,9 +16,6 @@
             "import": "./dist/ilw-pagination.js",
             "require": "./dist/ilw-pagination.cjs",
             "default": "./dist/ilw-pagination.js"
-        },
-        "./ilw-pagination.css": {
-            "import": "./dist/ilw-pagination.css"
         }
     },
     "main": "./dist/ilw-pagination.js",
