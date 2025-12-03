@@ -6,7 +6,7 @@
     "element-name": "ilw-pagination",
     "description": "This component provides standardized styles for page counting links (First, Previous, a numbered set of pages with the current page highlighted, Next, and Last)",
     "builder-version": "1.1",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "date": "11/14/2025",
     "css": "https://cdn.toolkit.illinois.edu/ilw-pagination/1.1/ilw-pagination.css",
     "js": "https://cdn.toolkit.illinois.edu/ilw-pagination/1.1/ilw-pagination.js",

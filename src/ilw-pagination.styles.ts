@@ -43,6 +43,7 @@ li.ellipsis, li.previous span, li.first span, li.next span, li.last span, li.pag
 }
 li.ellipsis {
   color: var(--ilw-color--control-text);
+  background: none;
 }
 li.pagecount span {
   margin-left: 20px;
