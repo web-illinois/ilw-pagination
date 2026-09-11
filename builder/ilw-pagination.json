@@ -1,12 +1,21 @@
 {
-    "title": "Pagination",
-    "tag": "ilw-pagination",
-    "github": "https://github.com/web-illinois/ilw-pagination/",
-    "type": "web component",
-    "element-name": "ilw-pagination",
-    "description": "This component provides standardized styles for page counting links (First, Previous, a numbered set of pages with the current page highlighted, Next, and Last)",
-    "purpose": "Provide easy navigation for paged content.",
-    "toolkit-version": "1.1",
-    "production-version": "1.1",
-    "development-version": "latest"
+  "title": "Pagination",
+  "id": "ilw-pagination",
+  "type": "Web Component",
+  "repository-name": "ilw-pagination",
+  "description": "Help visitors move through multi-page content with standardized first, previous, numbered, next, and last-page links.",
+  "purpose": "Provide easy navigation for paged content.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.1"
+    }
+  ]
 }
